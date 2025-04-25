@@ -1,11 +1,11 @@
 import { KiteConnect } from "kiteconnect";
 
-const apiKey = "609if7cf08xzv60j";
-const apiSecret = "4nfoxvqar7awnggv91b4m9y75ispfwn4";
-// const requestToken = "vf5T8KewJfDW5HiWSyVdZMywWbGWo40r";
+const apiKey = process.env.REACT_APP_KITE_API_KEY;
+const apiSecret = process.env.REACT_APP_KITE_API_SECRET;
+const accessToken: string = process.env.REACT_APP_KITE_ACCESS_TOKEN!;
 
-const kc = new KiteConnect({ api_key: apiKey });
-let accessToken = "QsLNvJTHeaBQBnmmDcfuudkQIiF4SIOv";
+const kc = new KiteConnect({ api_key: process.env.REACT_APP_KITE_API_KEY! });
+
 
 
 
